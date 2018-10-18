@@ -1,0 +1,20 @@
+Tutorials followed:
+Cherno Spark Game Engine Series on Youtube
+C++ Development With Visual Studio Code CppCon 2017 Rong Lu on Youtube
+
+Development system:
+Ubuntu-Mate 18.04 on Virtualbox Version 5.2.8 r121009 (Qt5.6.2)
+
+IDE: 
+Visual Studio Code
+
+Installation:
+I had to install the following dependencies
+ sudo apt-get install libglfw and libglfw-dev freeglut3-dev libgl-dev
+
+Compiling and Linking:
+Here is how i linked those libraries
+ g++ src/main.cpp src/window.cpp src/log.cpp -I/usr/local/include -L/usr/local/lib -lglfw -lGL -lGLU -lGLEW -o bin/tutorial_glfw.out
+
+Headers:
+ must include glew and glut prior to glhw. make sure that this order is maintained through includes of your own headers.
