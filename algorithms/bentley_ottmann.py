@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import bisect
 #implementation of the Bentley Ottman Algorithm for detecting intersections in O(NLogN+k)
 class Event:
